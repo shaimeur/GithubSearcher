@@ -1,3 +1,4 @@
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -17,29 +18,34 @@
   align-items: center;
 }
 .searchBar{
-  border: 2px solid rgb(247, 245, 249);
+  border: 1px solid rgb(247, 245, 249);
   width: 700px;
-  border-radius: 5px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   padding: 8px;
-
-
 }
 #searchInput {
   text-decoration: none;
   border: none;
   width: 100%;
   outline: none;
+  font-size: large;
 }
 
-button {
+.searchBar button {
   padding: 6px;
   background-color: rgb(67, 77, 223);
   color: white;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
+.searchBar button:hover {
+  background-color: #1af587;
+  transition: all 0.3s ease;
+}
 h1 {
   margin-bottom: 13px;
 }
