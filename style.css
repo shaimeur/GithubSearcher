@@ -1,9 +1,12 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
 *{
   background-color: rgba(25,33,45,255);
   margin: 0;
   padding: 0;
   box-sizing: border-box  ;
-  color : rgb(247, 245, 249)
+  color : rgb(247, 245, 249);
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -21,15 +24,22 @@
   justify-content: space-between;
   padding: 8px;
 
+
 }
 #searchInput {
   text-decoration: none;
   border: none;
+  width: 100%;
+  outline: none;
 }
 
 button {
-  padding: 5px;
+  padding: 6px;
   background-color: rgb(67, 77, 223);
   color: white;
   border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 13px;
 }
