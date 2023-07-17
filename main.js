@@ -10,13 +10,42 @@ const searchGithub = (event) =>{
 
 const fetchUser = async (userName) =>{
     let response = await fetch(`https://api.github.com/users/${userName}`) ;
+
+    let result = await response.json() ;
+
     if(response.ok) {
-        let result = await response.json()
         console.log(result)
     }else{
         console.log('Error user not found')
     }
+    appendResult(result)
+}
 
+const appendResult = (result) =>{
+    console.table(result)
+    const resultContainer = document.querySelector('#result');
+    resultContainer.innerHTML = ''; // Clear previous content
+
+    if (result.message === 'Not Found') {
+      // User not found
+      resultContainer.innerHTML = '<p>Error: User not found</p>';
+    } else {
+      // User found, display details
+      const userDetails = `
+        <img src="${result.avatar_url}" alt="Profile Picture" />
+        <h2>${result.name}</h2>
+        <p>Username: ${result.login}</p>
+        <p>Bio: ${result.bio}</p>
+        <p>public Repos: ${result.public_repos}</p>
+        <p>public Repos: ${result.followers}</p>
+        <p>followers: ${result.followers}</p>
+        <p>following: ${result.following}</p>
+        <p>company: ${result.company}</p>
+        <p>Location: ${result.location}</p>
+
+      `;
+      resultContainer.innerHTML = userDetails;
+    }
 }
 
 
