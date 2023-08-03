@@ -50,7 +50,8 @@ h1 {
   margin-bottom: 13px;
 }
 .details{
-  border: 2px solid white;
+  border: 2px solid #636973;
+  background-color: #151921;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -61,29 +62,49 @@ h1 {
   border-radius: 8px;
 }
 .up{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   width: 64%;
+  height: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content:baseline;
 }
 .img-profil {
   height: 7rem;
   width: 7rem;
-  border: 2px solid tomato;
+  /* border: 2px solid tomato; */
   border-radius: 100px;
   position: relative;
-  right: 7rem;
+  right: 116px;
+}
+.name{
+  position: relative;
+  top: -11px;
+  right: 100px;
+  background: transparent;
+}
+.login{
+  position: absolute;
+  top: 391px;
+  left: 469px;
+  color: #5959c1;
+  background: transparent;
 }
 .up p {
   max-width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+
 }
 .follow{
   border: 1px solid white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  /* flex-direction: column; */
   width: 64%;
 }
 .other-info{
   border : 1px solid yellow;
+}
+li{
+  list-style: none;
 }

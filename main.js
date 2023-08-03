@@ -35,20 +35,20 @@ const appendResult = (result) =>{
 
         <div class="up">
             <img src="${result.avatar_url}" alt="Profile Picture" class="img-profil"/>
-            <h2 class="name">${result.name}</h2>
-            <span class="login">@${result.login}</span>
+            <div><<h2 class="name">${result.name}</h2></div>
+            <div class="login">@${result.login}</div>
             <p class="bio"> ${result.bio}</p>
         </div>
 
-          <div class="follow">
-              <p>public Repos: ${result.public_repos}</p>
-              <p>followers: ${result.followers}</p>
-              <p>following: ${result.following}</p>
-          </div>
-          <div class="other-info">
+          <ul class="follow">
+              <li>public Repos: ${result.public_repos}</li>
+              <li>followers: ${result.followers}</li>
+              <li>following: ${result.following}</li>
+          </ul>
+          <ul class="other-info">
                 <p>company: ${result.company}</p>
                 <p>Location: ${result.location}</p>
-          </div>
+          </ul>
 
 
       `;
