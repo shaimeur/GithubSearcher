@@ -49,3 +49,41 @@
 h1 {
   margin-bottom: 13px;
 }
+.details{
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30rem;
+  width: 43rem;
+  margin-top: 3rem;
+  border-radius: 8px;
+}
+.up{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid greenyellow;
+  width: 64%;
+}
+.img-profil {
+  height: 7rem;
+  width: 7rem;
+  border: 2px solid tomato;
+  border-radius: 100px;
+  position: relative;
+  right: 7rem;
+}
+.up p {
+  max-width: 100%;
+  border: 1px solid red;
+}
+.follow{
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+}
+.other-info{
+  border : 1px solid yellow;
+}

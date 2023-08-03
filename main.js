@@ -32,16 +32,24 @@ const appendResult = (result) =>{
     } else {
       // User found, display details
       const userDetails = `
-        <img src="${result.avatar_url}" alt="Profile Picture" />
-        <h2>${result.name}</h2>
-        <p>Username: ${result.login}</p>
-        <p>Bio: ${result.bio}</p>
-        <p>public Repos: ${result.public_repos}</p>
-        <p>public Repos: ${result.followers}</p>
-        <p>followers: ${result.followers}</p>
-        <p>following: ${result.following}</p>
-        <p>company: ${result.company}</p>
-        <p>Location: ${result.location}</p>
+
+        <div class="up">
+            <img src="${result.avatar_url}" alt="Profile Picture" class="img-profil"/>
+            <h2 class="name">${result.name}</h2>
+            <span class="login">@${result.login}</span>
+            <p class="bio"> ${result.bio}</p>
+        </div>
+
+          <div class="follow">
+              <p>public Repos: ${result.public_repos}</p>
+              <p>followers: ${result.followers}</p>
+              <p>following: ${result.following}</p>
+          </div>
+          <div class="other-info">
+                <p>company: ${result.company}</p>
+                <p>Location: ${result.location}</p>
+          </div>
+
 
       `;
       resultContainer.innerHTML = userDetails;
