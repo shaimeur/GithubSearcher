@@ -41,13 +41,13 @@ const appendResult = (result) =>{
         </div>
 
           <div class="follow">
-              <li>public Repos: ${result.public_repos}</li>
-              <li>followers: ${result.followers}</li>
-              <li>following: ${result.following}</li>
+              <li>public Repos <span>${result.public_repos}</span></li>
+              <li>followers <span>${result.followers}</span> </li>
+              <li>following <span>${result.following}</span> </li>
           </div>
           <div class="other-info">
-                <p>company: ${result.company}</p>
-                <p>Location: ${result.location}</p>
+                <p> ${result.company}</p>
+                <p> ${result.blog}</p>
           </div>
 
 
